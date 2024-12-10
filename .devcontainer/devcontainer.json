@@ -1,0 +1,30 @@
+{
+    "name": "WordPress Plugin Development",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "wordpress",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "bmewburn.vscode-intelephense-client",
+                "xdebug.php-debug",
+                "MehediDracula.php-namespace-resolver",
+                "neilbrayfield.php-docblocker",
+                "formulahendry.auto-close-tag",
+                "formulahendry.auto-rename-tag"
+            ],
+            "settings": {
+                "php.validate.executablePath": "/usr/local/bin/php",
+                "php.validate.enable": true,
+                "php.suggest.basic": true,
+                "editor.formatOnSave": true,
+                "editor.defaultFormatter": "junstyle.php-cs-fixer",
+                "[php]": {
+                    "editor.defaultFormatter": "junstyle.php-cs-fixer"
+            }
+        }
+    },
+    "forwardPorts": [18080, 3306],
+    "postCreateCommand": "composer install",
+    "remoteUser": "www-data"
+}

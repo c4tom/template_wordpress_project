@@ -1,0 +1,89 @@
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Composer
+/vendor/
+composer.lock
+
+# WordPress
+wp-config.php
+wp-content/uploads/
+wp-content/blogs.dir/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/cache/
+wp-content/cache/supercache/
+
+# Plugins
+# Ignore all plugins except your development plugins
+wp-content/plugins/*
+!wp-content/plugins/your-plugin-name/
+
+# Themes
+wp-content/themes/*
+!wp-content/themes/your-theme-name/
+
+# Logs
+*.log
+error.log
+access.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Development files
+.env
+.env.local
+.env.development
+.env.production
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build and compiled files
+*.min.css
+*.min.js
+dist/
+build/
+
+# Security and sensitive files
+*.key
+*.pem
+*.crt
+*.csr
+
+# Temporary files
+*.swp
+*.swo
+*~
+.tmp
+.sass-cache
+
+# Backup files
+*.bak
+*.gho
+*.ori
+*.orig
+*.tmp
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Project specific
+/workspace/
+/plugins/
+*.zip
